@@ -1,10 +1,23 @@
 import React from "react";
+import { NavItem, NavLink } from "reactstrap";
 
 function Nav() {
   return (
-    <header className="flex-row px-1">
-      <h2>Hello World!</h2>
-    </header>
+    <Nav pills>
+      <NavItem>
+        <NavLink active href="#">
+          Link
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink href="#">Another Link</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink disabled href="#">
+          Disabled Link
+        </NavLink>
+      </NavItem>
+    </Nav>
   );
 }
 
