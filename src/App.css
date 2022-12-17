@@ -16,3 +16,11 @@
 .App-link {
   color: #61dafb;
 }
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: white;
+}
