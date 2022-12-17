@@ -24,3 +24,18 @@
 .nav-link:hover {
   color: white;
 }
+
+.personal-image {
+  border-radius: 40%;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.about-title {
+border-bottom: 3px solid gray;
+padding-bottom: 10px;
+}
+
+.about-paragraph-1 {
+  font-size: 25px;
+}
