@@ -19,12 +19,12 @@ code {
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 html,
 body {
-  background: #F1F1F1;
   font-family: 'Merriweather', sans-serif;
 }
 h1 {
   text-align: center;
-  color: #A8A8A8;
+  font-size: 35px;
+  color: gray;
 }
 form {
   max-width: 600px;
@@ -33,6 +33,7 @@ form {
 }
 input,
 textarea {
+  background-color: #f1f1f1;
   border: 0;
   outline: 0;
   padding: 1em;
@@ -45,7 +46,7 @@ textarea {
 }
 #input-submit {
   color: white;
-  background: #E74C3C;
+  background: limegreen;
   cursor: pointer;
 }
 #input-submit:hover {
@@ -53,30 +54,4 @@ textarea {
 }
 textarea {
   height: 126px;
-}
-.half {
-  float: left;
-  width: 48%;
-  margin-bottom: 1em;
-}
-.right {
-  width: 50%;
-}
-.left {
-  margin-right: 2%;
-}
-@media (max-width: 480px) {
-  .half {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
-  }
-}
-.cf:before,
-.cf:after {
-  content: ' ';
-  display: table;
-}
-.cf:after {
-  clear: both;
 }

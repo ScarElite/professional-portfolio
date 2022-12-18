@@ -3,41 +3,22 @@
   --secondary: limegreen;
 }
 
-.App {
-  text-align: center;
+body {
+  background-color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-/* .full-page {
-  background-color: lightgray;
-} */
 
 /* Main Header */
 .title-header {
-  color: var(--secondary);
+  color: black;
 }
 
 /* Nav */
-.navbar {
+/* .navbar {
   background-color: grey;
-}
+} */
 
 .navbar-item:hover {
-  color: white;
+  border-bottom: 2px solid var(--secondary);
 }
 
 /* About Section */
@@ -63,6 +44,11 @@
 
 .about-paragraph-2 {
   width: 70%;
+}
+
+/* Contact */
+.contact {
+  margin-top: 10%;
 }
 
 /* Footer */
