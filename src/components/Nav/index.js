@@ -8,13 +8,13 @@ function Nav() {
           <a href="/">About Me</a>
         </li>
         <li className="navbar-item">
-          <a href="#portfolio">Portfolio</a>
+          <a href="/portfolio">Portfolio</a>
         </li>
         <li className="navbar-item">
-          <a href="#contact">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
         <li className="navbar-item">
-          <a href="#resume">Resume</a>
+          <a href="/resume">Resume</a>
         </li>
       </ul>
     </nav>
