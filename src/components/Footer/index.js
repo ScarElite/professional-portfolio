@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div id="Footer">
       <ul className="flex text-8xl justify-center">
-        <li className="github-icon-footer px-20">
+        <li className="github-icon-footer px-20 animate-pulse">
           <a
             href="https://github.com/ScarElite"
             target="_blank"
@@ -15,7 +15,7 @@ function Footer() {
             <AiFillGithub></AiFillGithub>
           </a>
         </li>
-        <li className="linkedin-icon-footer px-20">
+        <li className="linkedin-icon-footer px-20 animate-pulse">
           <a
             href="https://www.linkedin.com/in/mitchell-armstrong99/"
             target="_blank"

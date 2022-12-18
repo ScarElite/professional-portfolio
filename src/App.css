@@ -10,6 +10,7 @@ body {
 /* Main Header */
 .title-header {
   color: black;
+  text-shadow: 2px 2px 2px var(--secondary);
 }
 
 /* Nav */
@@ -18,7 +19,8 @@ body {
 } */
 
 .navbar-item:hover {
-  border-bottom: 2px solid var(--secondary);
+  /* border-bottom: 2px solid var(--secondary); */
+  text-shadow: var(--secondary) 1px 0 10px;
 }
 
 /* About Section */
@@ -51,6 +53,12 @@ body {
   margin-top: 10%;
 }
 
+/* Portfolio */
+.project {
+  min-width: 364px;
+  min-height: 268px;
+}
+
 /* Footer */
 #Footer {
    position: fixed;
@@ -58,4 +66,20 @@ body {
    width: 100%;
    height: 120px;   /* Height of the footer */
    background: slategray;
+}
+
+.github-icon-footer {
+  margin-top: 15px;
+}
+
+.github-icon-footer:hover {
+  color: white;
+}
+
+.linkedin-icon-footer {
+  margin-top: 15px;
+}
+
+.linkedin-icon-footer:hover {
+  color: white;
 }
