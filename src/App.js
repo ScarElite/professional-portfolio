@@ -1,4 +1,5 @@
 import React from "react";
+import { Modal } from "react-responsive-modal";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
