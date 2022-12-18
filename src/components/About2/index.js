@@ -2,8 +2,8 @@ import React from "react";
 
 function About2() {
   return (
-    <div>
-      <section className="about-paragraph-2">
+    <div className="flex justify-center mt-12">
+      <section className="about-paragraph-2 text-3xl font-serif">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

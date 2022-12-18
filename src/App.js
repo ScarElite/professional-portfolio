@@ -11,6 +11,7 @@ function App() {
       <Header></Header>
       <Nav></Nav>
       <About></About>
+      <About2></About2>
     </div>
   );
 }

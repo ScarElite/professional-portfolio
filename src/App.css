@@ -26,14 +26,41 @@
   background-color: lightgray;
 } */
 
+/* Main Header */
 .title-header {
   color: var(--secondary);
 }
 
+/* Nav */
 .navbar {
   background-color: grey;
 }
 
-/* .about-section {
-  background-color: lightgray;
-} */
+.navbar-item:hover {
+  color: white;
+}
+
+/* About Section */
+.about-header {
+  border-bottom: 3px solid black;
+  margin: 0px 10% 50px 10%;
+  padding-bottom: 25px;
+}
+
+.personal-image {
+  max-width: 250px !important; 
+  max-height: 250px !important;
+  border-radius: 20%;
+}
+
+.about-section-1 {
+  width: 30%;
+}
+
+.about-section-2 {
+  width: 70%;
+}
+
+.about-paragraph-2 {
+  width: 70%;
+}
