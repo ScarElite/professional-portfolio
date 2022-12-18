@@ -2,15 +2,15 @@ import React from "react";
 
 function About() {
   return (
-    <div className="d-flex my-5 me-5">
-      <section className="col-4 d-flex justify-content-center">
+    <div className="flex my-5 me-5 about-section">
+      <section className="justify-content-center">
         <img
           className="personal-image"
           src="https://via.placeholder.com/250"
           alt="placeholder"
         ></img>
       </section>
-      <section className="col-6">
+      <section className="">
         <aside>
           <h1 className="text-center about-title">Who Am I?</h1>
           <p className="about-paragraph-1">
