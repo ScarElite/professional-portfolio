@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import "react-responsive-modal/styles.css";
-import { Modal } from "react-responsive-modal";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
