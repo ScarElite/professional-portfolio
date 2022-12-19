@@ -1,5 +1,7 @@
 import React from "react";
 import { Modal } from "react-responsive-modal";
+import { AiFillGithub } from "react-icons/ai";
+import { SiHeroku } from "react-icons/si";
 import mealMaker from "../../assets/images/meal-maker.PNG";
 import alternativeEndings from "../../assets/images/alternative-endings.PNG";
 import JATE from "../../assets/images/JATE.PNG";
@@ -23,30 +25,102 @@ function Portfolio() {
     </p>
   );
 
+  const project1Text = (
+    <div>
+      <h3 className="text-2xl font-medium border-b-2 border-black mb-4 pb-2 w-52">
+        About the project
+      </h3>
+      <p className="text-lg pb-4">
+        Alternative Endings is a creative writing website for movie buffs and
+        anyone else who enjoys movies to leave their review, thoughts, and/or
+        their ideal alternative ending to the movie they watched and are writing
+        about. Users can create an account and leave a review on a movie they
+        have watched. While visiting the website users can search for a movie,
+        see upcoming movie, movies currently in theaters, and reviews other
+        users have written. When a user clicks on a movie a modal will appear
+        and populate with some info about the movie as well as a button that
+        will redirect them to a page to leave a review.
+      </p>
+      <p className="text-lg">
+        This was the 2nd project in the UNC Chapel Hill Coding BootCamp and was
+        a collaborative project. I worked on this project with 3 other
+        developers who helped create this. I primarily worked on the backend and
+        using the API data that we called on from "TheMovieDB".
+      </p>
+      <h3 className="text-2xl font-medium border-b-2 border-black mb-4 pb-2 py-4">
+        Check out the GitHub Repo or the deployed Heroku application
+      </h3>
+      <div className="mt-8">
+        <ul className="flex text-8xl justify-center">
+          <li className="px-20 animate-pulse">
+            <a
+              href="https://github.com/ScarElite/Alternative-Endings"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillGithub></AiFillGithub>
+            </a>
+          </li>
+          <li className="px-20 animate-pulse">
+            <a
+              href="https://alternative-endings.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiHeroku></SiHeroku>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+
   return (
     <div className="container mx-auto">
       <Modal open={modalOne} onClose={() => setOpenFirst(false)} center>
-        <p>Alternative Endings</p>
-        {littleLorem}
+        <p className="text-4xl font-bold text-center mb-4">
+          Alternative Endings
+        </p>
+        <div className="rounded-xl border-2 border-black mb-4">
+          <img src={alternativeEndings} alt="" className="rounded-xl" />
+        </div>
+        {project1Text}
       </Modal>
       <Modal open={modalTwo} onClose={() => setOpenSecond(false)} center>
-        <p>Second modal</p>
+        <p className="text-4xl font-bold text-center mb-4">Meal Maker</p>
+        <div className="rounded-xl border-2 border-black mb-4">
+          <img src={mealMaker} alt="" className="rounded-xl" />
+        </div>
         {littleLorem}
       </Modal>
       <Modal open={modalThree} onClose={() => setOpenThird(false)} center>
-        <p>Third modal</p>
+        <p className="text-4xl font-bold text-center mb-4">JATE</p>
+        <div className="rounded-xl border-2 border-black mb-4">
+          <img src={JATE} alt="" className="rounded-xl" />
+        </div>
         {littleLorem}
       </Modal>
       <Modal open={modalFour} onClose={() => setOpenFourth(false)} center>
-        <p>Fourth modal</p>
+        <p className="text-4xl font-bold text-center mb-4">Tech Blog</p>
+        <div className="rounded-xl border-2 border-black mb-4">
+          <img src={techBlog} alt="" className="rounded-xl" />
+        </div>
         {littleLorem}
       </Modal>
       <Modal open={modalFive} onClose={() => setOpenFifth(false)} center>
-        <p>Fifth modal</p>
+        <p className="text-4xl font-bold text-center mb-4">Coding Quiz</p>
+        <div className="rounded-xl border-2 border-black mb-4">
+          <img src={codingQuiz} alt="" className="rounded-xl" />
+        </div>
         {littleLorem}
       </Modal>
       <Modal open={modalSix} onClose={() => setOpenSixth(false)} center>
-        <p>Sixth modal</p>
+        <p className="text-4xl font-bold text-center mb-4">
+          Work Day Scheduler
+        </p>
+        <div className="rounded-xl border-2 border-black mb-4">
+          <img src={workDayScheduler} alt="" className="rounded-xl" />
+        </div>
         {littleLorem}
       </Modal>
 
