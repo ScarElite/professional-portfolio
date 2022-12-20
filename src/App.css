@@ -1,6 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --primary: #7645d9;
-  --secondary: limegreen;
+  --primary: rgb(24, 24, 24);
+  --secondary: rgb(29, 29, 29);
+  --tertiary: rgb(8,253,216);
   @font-face {
     font-family: "Anton";
     src: url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -8,29 +13,36 @@
 }
 
 body {
-  background-image: url(./assets/images/Portfolio-bg-Images/peakpx.jpg);
-  background-position: top;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--secondary);
 }
 
 /* Main Header */
 .title-header {
-  color: black;
-  text-shadow: 2px 2px 2px var(--secondary);
+  color: var(--tertiary);
 }
 
 /* Nav */
 .navbar {
-  background-color: white;
+  background-color: var(--primary);
+}
+
+.navbar-item {
+  color: var(--tertiary);
 }
 
 .navbar-item:hover {
-  /* border-bottom: 2px solid var(--secondary); */
-  text-shadow: var(--secondary) 1px 0 10px;
+  text-shadow: var(--tertiary) 1px 0 10px;
 }
 
 /* About Section */
 .about-header {
-color: var(--primary);
+color: var(--tertiary);
 font-family: "Anton";
 }
 
@@ -40,6 +52,7 @@ font-family: "Anton";
 
 .about-section-text {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: var(--tertiary);
 }
 
 .personal-image {
@@ -51,6 +64,44 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 /* Contact */
 .contact {
   margin-top: 10%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  color: var(--tertiary);
+}
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+input,
+textarea {
+  background-color: #f1f1f1;
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: sans-serif;
+  resize: none;
+}
+#input-submit {
+  color: var(--tertiary);
+  background: var(--secondary);
+  border: 2px solid var(--tertiary);
+  cursor: pointer;
+}
+#input-submit:hover {
+  box-shadow: 0 1px 1px 1px rgba(8,253,216, 0.2);
+  background: var(--tertiary);
+  color: var(--secondary);
+}
+textarea {
+  height: 126px;
 }
 
 /* Portfolio */
@@ -65,21 +116,23 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
    bottom: 0;
    width: 100%;
    height: 120px;
-   background: rgb(166, 159, 159);
+   background: var(--secondary);
 }
 
 .github-icon-footer {
   margin-top: 15px;
+  color: var(--tertiary);
 }
 
 .github-icon-footer:hover {
-  color: white;
+  color: darkcyan;
 }
 
 .linkedin-icon-footer {
   margin-top: 15px;
+  color: var(--tertiary);
 }
 
 .linkedin-icon-footer:hover {
-  color: white;
+  color: darkcyan;
 }
