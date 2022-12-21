@@ -107,11 +107,54 @@ textarea {
 }
 
 /* Portfolio */
+.project-page-header {
+  font-family: "Exo";
+  font-weight: bold;
+}
+
 .project {
-  min-width: 364px;
-  min-height: 268px;
+  min-height: 364px;
+  min-width: 268px;
+  background-color: white;
+  border: 2px solid var(--tertiary);
+}
+
+.project:hover {
+  border: 2px solid white;
+  opacity: .8;
+}
+
+.project-modal {
   background-color: var(--secondary);
+}
+
+.project-modal-info {
+  font-size: 22px;
+  font-family: "Fredoka One";
+}
+
+.jQuery {
+  align-self: center;
+}
+
+.person-icon {
+  font-size: 48px;
   color: var(--tertiary);
+}
+
+.meal-maker {
+  width: stretch;
+  max-height: 460px;
+}
+
+.tech-blog {
+  width: stretch;
+  max-height: 450px;
+}
+
+.work-day-scheduler {
+  width: stretch;
+  max-height: 420px;
 }
 
 /* Contact */
