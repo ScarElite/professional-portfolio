@@ -24,6 +24,25 @@ body {
   font-family: "Play";
 }
 
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
 /* Nav */
 .navbar {
   background-color: var(--primary);
@@ -164,7 +183,18 @@ textarea {
 
 .contact-h1 {
   font-family: "Fjalla One";
-  font-size: 64px;
+  font-size: 80px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--tertiary), 0 0 20px var(--tertiary), 0 0 25px var(--tertiary), 0 0 30px var(--tertiary), 0 0 35px var(--tertiary);
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--tertiary), 0 0 20px var(--tertiary), 0 0 25px var(--tertiary), 0 0 30px var(--tertiary), 0 0 35px var(--tertiary);
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--tertiary), 0 0 40px var(--tertiary), 0 0 50px var(--tertiary), 0 0 60px var(--tertiary), 0 0 70px var(--tertiary);
+  }
 }
 
 .contact-submit {
@@ -176,7 +206,9 @@ textarea {
 .skills-header {
   color: var(--tertiary);
   font-family: "Play";
-  font-size: 64px;
+  font-size: 100px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--tertiary), 0 0 20px var(--tertiary), 0 0 25px var(--tertiary), 0 0 30px var(--tertiary), 0 0 35px var(--tertiary);
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .skill-section-header {
@@ -201,6 +233,8 @@ margin-bottom: 6px;
   height: fit-content;
   padding: 8px;
   margin: 8px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--tertiary), 0 0 20px var(--tertiary), 0 0 25px var(--tertiary), 0 0 30px var(--tertiary), 0 0 35px var(--tertiary);
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .skill-border {
@@ -211,6 +245,8 @@ margin-bottom: 6px;
   width: 80%;
   margin-left: 10%;
   margin-top: 5%;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--tertiary), 0 0 20px var(--tertiary), 0 0 25px var(--tertiary), 0 0 30px var(--tertiary), 0 0 35px var(--tertiary);
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .backend-skill {

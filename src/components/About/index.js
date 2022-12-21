@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="mt-36">
+    <div className="mt-36 about-body">
       <header className="flex justify-center font-mono text-7xl font-bold about-header font-effect-3d">
         <span className="animate-pulse">HELLO, I'M MITCHELL ARMSTRONG</span>
       </header>
