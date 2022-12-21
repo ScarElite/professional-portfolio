@@ -15,7 +15,7 @@ function Footer() {
             <AiFillGithub></AiFillGithub>
           </a>
         </li>
-        <li className="linkedin-icon-footer px-20">
+        <li className="linkedin-icon-footer px-20 font-effect-anaglyph">
           <a
             href="https://www.linkedin.com/in/mitchell-armstrong99/"
             target="_blank"

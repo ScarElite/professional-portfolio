@@ -3,11 +3,11 @@ import React from "react";
 function Nav() {
   return (
     <div className="navbar flex align-content: items-center justify-between p-4">
-      <h1>
+      <h1 className="title-header font-effect-anaglyph">
         <a href="/">Mitchell Armstrong</a>
       </h1>
       <nav className="font-mono text-2xl font-medium mr-12">
-        <ul className="flex justify-between">
+        <ul className="flex justify-between font-effect-anaglyph">
           <li className="navbar-item px-10">
             <a href="/">About Me</a>
           </li>

@@ -60,7 +60,7 @@ const Contact = () => {
   return (
     <div>
       <div className="contact">
-        <h1>Contact Form</h1>
+        <h1 className="contact-h1">REACH OUT!</h1>
         <form className="cf" ref={form} onSubmit={checkInfo}>
           <div>
             <input
@@ -75,6 +75,12 @@ const Contact = () => {
               name="user_email"
               id="user_email"
             />
+            <input
+              type="text"
+              placeholder="Subject (optional)"
+              name="user_subject"
+              id="user_subject"
+            />
           </div>
           <div>
             <textarea
@@ -84,7 +90,12 @@ const Contact = () => {
               id="user_message"
             ></textarea>
           </div>
-          <input type="submit" value="Submit" id="input-submit" />
+          <input
+            type="submit"
+            value="Submit"
+            id="input-submit"
+            className="contact-submit font-effect-anaglyph"
+          />
         </form>
       </div>
     </div>

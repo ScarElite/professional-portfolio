@@ -6,10 +6,6 @@
   --primary: rgb(24, 24, 24);
   --secondary: rgb(29, 29, 29);
   --tertiary: rgb(8,253,216);
-  @font-face {
-    font-family: "Anton";
-    src: url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-  }
 }
 
 body {
@@ -25,6 +21,7 @@ body {
 /* Main Header */
 .title-header {
   color: var(--tertiary);
+  font-family: "Play";
 }
 
 /* Nav */
@@ -43,27 +40,31 @@ body {
 /* About Section */
 .about-header {
 color: var(--tertiary);
-font-family: "Anton";
+font-family: "Play";
 }
 
 .about-section {
-  width: 50%;
+  width: 70%;
 }
 
 .about-section-text {
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-color: var(--tertiary);
+font-family: "Exo";
+font-weight: 600;
+font-size: 20px;
+text-align: start;
+text-indent: 1.5rem;
+color: white;
+}
+
+.about-span {
+  color: var(--tertiary);
 }
 
 .personal-image {
   max-width: 250px !important; 
   max-height: 250px !important;
   border-radius: 20%;
-}
-
-/* Contact */
-.contact {
-  margin-top: 10%;
+  box-shadow: 0 0 15px rgba(8, 253, 216, 0.5);
 }
 
 h1 {
@@ -86,7 +87,8 @@ textarea {
   display: block;
   width: 100%;
   margin-top: 1em;
-  font-family: sans-serif;
+  font-family: "Exo";
+  font-size: 18px;
   resize: none;
 }
 #input-submit {
@@ -108,6 +110,21 @@ textarea {
 .project {
   min-width: 364px;
   min-height: 268px;
+}
+
+/* Contact */
+.contact {
+  margin-top: 10%;
+}
+
+.contact-h1 {
+  font-family: "Fjalla One";
+  font-size: 64px;
+}
+
+.contact-submit {
+  font-family: "Martian Mono";
+  transition: 0.5s ease-out all;
 }
 
 /* Footer */
