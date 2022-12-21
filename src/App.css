@@ -110,6 +110,8 @@ textarea {
 .project {
   min-width: 364px;
   min-height: 268px;
+  background-color: var(--secondary);
+  color: var(--tertiary);
 }
 
 /* Contact */
@@ -125,6 +127,61 @@ textarea {
 .contact-submit {
   font-family: "Martian Mono";
   transition: 0.5s ease-out all;
+}
+
+/* Resume */
+.skills-header {
+  color: var(--tertiary);
+  font-family: "Play";
+  font-size: 64px;
+}
+
+.skill-section-header {
+color: var(--tertiary);
+text-align: center;
+border-bottom: 3px solid var(--tertiary);
+padding: 6px;
+margin-bottom: 6px;
+}
+
+.frontend-skills {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.frontend-skill {
+  font-family: "Acme";
+  background-color: var(--tertiary);
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+  padding: 8px;
+  margin: 8px;
+}
+
+.skill-border {
+  border: 2px solid var(--tertiary);
+}
+
+.backend-skills {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.backend-skill {
+  font-family: "Acme";
+  background-color: var(--tertiary);
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+  padding: 8px;
+  margin: 8px;
+}
+
+.resume-download {
+  color: var(--tertiary);
 }
 
 /* Footer */

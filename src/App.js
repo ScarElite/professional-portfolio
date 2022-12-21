@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />
       </Router>
