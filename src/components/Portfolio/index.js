@@ -24,7 +24,7 @@ function Portfolio() {
     <div>
       <div className="flex-col project-modal-info">
         <h2>Technologies Used:</h2>
-        <ul className="flex">
+        <ul className="flex technology">
           <li>
             <img
               src="https://img.icons8.com/color/48/null/html-5--v1.png"
@@ -94,7 +94,7 @@ function Portfolio() {
         To learn more about this application please visit the GitHub Repo by
         clicking the GitHub icon below!
       </p>
-      <h3 className="text-2xl font-medium border-t-2 border-black mb-4 pb-2 py-4">
+      <h3 className="text-2xl font-medium mb-4 pb-2 py-4 modal-divide">
         Check out the GitHub Repo or the deployed Heroku application
       </h3>
       <div className="mt-8">
@@ -126,7 +126,7 @@ function Portfolio() {
     <div>
       <div className="flex-col project-modal-info">
         <h2>Technologies Used:</h2>
-        <ul className="flex">
+        <ul className="flex technology">
           <li>
             <img
               src="https://img.icons8.com/color/48/null/html-5--v1.png"
@@ -181,7 +181,7 @@ function Portfolio() {
         To learn more about this application please visit the GitHub Repo by
         clicking the GitHub icon below!
       </p>
-      <h3 className="text-2xl font-medium border-t-2 border-black mb-4 pb-2 py-4">
+      <h3 className="text-2xl font-medium modal-divide mb-4 pb-2 py-4">
         Check out the GitHub Repo or the deployed GitHub Page
       </h3>
       <div className="mt-8">
@@ -213,7 +213,7 @@ function Portfolio() {
     <div>
       <div className="flex-col project-modal-info">
         <h2>Technologies Used:</h2>
-        <ul className="flex">
+        <ul className="flex technology">
           <li>
             <img
               src="https://img.icons8.com/color/48/null/html-5--v1.png"
@@ -268,7 +268,7 @@ function Portfolio() {
         To learn more about this application please visit the GitHub Repo by
         clicking the GitHub icon below!
       </p>
-      <h3 className="text-2xl font-medium border-t-2 border-black mb-4 pb-2 py-4">
+      <h3 className="text-2xl font-medium modal-divide mb-4 pb-2 py-4">
         Check out the GitHub Repo or the deployed Heroku application
       </h3>
       <div className="mt-8">
@@ -300,7 +300,7 @@ function Portfolio() {
     <div>
       <div className="flex-col project-modal-info">
         <h2>Technologies Used:</h2>
-        <ul className="flex">
+        <ul className="flex technology">
           <li>
             <img
               src="https://img.icons8.com/color/48/null/html-5--v1.png"
@@ -365,7 +365,7 @@ function Portfolio() {
         To learn more about this application please visit the GitHub Repo by
         clicking the GitHub icon below!
       </p>
-      <h3 className="text-2xl font-medium border-t-2 border-black mb-4 pb-2 py-4">
+      <h3 className="text-2xl font-medium modal-divide mb-4 pb-2 py-4">
         Check out the GitHub Repo or the deployed Heroku application
       </h3>
       <div className="mt-8">
@@ -397,7 +397,7 @@ function Portfolio() {
     <div>
       <div className="flex-col project-modal-info">
         <h2>Technologies Used:</h2>
-        <ul className="flex">
+        <ul className="flex technology">
           <li>
             <img
               src="https://img.icons8.com/color/48/null/html-5--v1.png"
@@ -443,7 +443,7 @@ function Portfolio() {
         To learn more about this application please visit the GitHub Repo by
         clicking the GitHub icon below!
       </p>
-      <h3 className="text-2xl font-medium border-t-2 border-black mb-4 pb-2 py-4">
+      <h3 className="text-2xl font-medium modal-divide mb-4 pb-2 py-4">
         Check out the GitHub Repo or the deployed GitHub Page
       </h3>
       <div className="mt-8">
@@ -475,7 +475,7 @@ function Portfolio() {
     <div>
       <div className="flex-col project-modal-info">
         <h2>Technologies Used:</h2>
-        <ul className="flex">
+        <ul className="flex technology">
           <li>
             <img
               src="https://img.icons8.com/color/48/null/html-5--v1.png"
@@ -529,7 +529,7 @@ function Portfolio() {
         To learn more about this application please visit the GitHub Repo by
         clicking the GitHub icon below!
       </p>
-      <h3 className="text-2xl font-medium border-t-2 border-black mb-4 pb-2 py-4">
+      <h3 className="text-2xl font-medium modal-divide mb-4 pb-2 py-4">
         Check out the GitHub Repo or the deployed GitHub Page
       </h3>
       <div className="mt-8">
@@ -568,36 +568,48 @@ function Portfolio() {
         <p className="text-4xl font-bold text-center mb-4">
           Alternative Endings
         </p>
-        <div className="rounded-xl border-2 border-black mb-4">
-          <img src={alternativeEndings} alt="" className="rounded-xl" />
+        <div className="rounded-xl mb-4">
+          <img
+            src={alternativeEndings}
+            alt=""
+            className="rounded-xl modal-img"
+          />
         </div>
         {project1Modal}
       </Modal>
       <Modal open={modalTwo} onClose={() => setOpenSecond(false)} center>
         <p className="text-4xl font-bold text-center mb-4">Meal Maker</p>
-        <div className="rounded-xl border-2 border-black mb-4">
-          <img src={mealMaker} alt="" className="rounded-xl meal-maker" />
+        <div className="rounded-xl mb-4">
+          <img
+            src={mealMaker}
+            alt=""
+            className="rounded-xl meal-maker modal-img"
+          />
         </div>
         {project2Modal}
       </Modal>
       <Modal open={modalThree} onClose={() => setOpenThird(false)} center>
         <p className="text-4xl font-bold text-center mb-4">JATE</p>
-        <div className="rounded-xl border-2 border-black mb-4">
-          <img src={JATE} alt="" className="rounded-xl" />
+        <div className="rounded-xl mb-4">
+          <img src={JATE} alt="" className="rounded-xl modal-img" />
         </div>
         {project3Modal}
       </Modal>
       <Modal open={modalFour} onClose={() => setOpenFourth(false)} center>
         <p className="text-4xl font-bold text-center mb-4">Tech Blog</p>
-        <div className="rounded-xl border-2 border-black mb-4">
-          <img src={techBlog} alt="" className="rounded-xl tech-blog" />
+        <div className="rounded-xl mb-4">
+          <img
+            src={techBlog}
+            alt=""
+            className="rounded-xl tech-blog modal-img"
+          />
         </div>
         {project4Modal}
       </Modal>
       <Modal open={modalFive} onClose={() => setOpenFifth(false)} center>
         <p className="text-4xl font-bold text-center mb-4">Coding Quiz</p>
-        <div className="rounded-xl border-2 border-black mb-4">
-          <img src={codingQuiz} alt="" className="rounded-xl" />
+        <div className="rounded-xl mb-4">
+          <img src={codingQuiz} alt="" className="rounded-xl modal-img" />
         </div>
         {project5Modal}
       </Modal>
@@ -605,11 +617,11 @@ function Portfolio() {
         <p className="text-4xl font-bold text-center mb-4">
           Work Day Scheduler
         </p>
-        <div className="rounded-xl border-2 border-black mb-4">
+        <div className="rounded-xl mb-4">
           <img
             src={workDayScheduler}
             alt=""
-            className="rounded-xl work-day-scheduler"
+            className="rounded-xl work-day-scheduler modal-img"
           />
         </div>
         {project6Modal}

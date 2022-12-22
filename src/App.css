@@ -144,13 +144,26 @@ textarea {
   opacity: .8;
 }
 
-.project-modal {
+.react-responsive-modal-modal {
   background-color: var(--secondary);
+  color: var(--tertiary);
+  border: 2px solid var(--tertiary);
+  border-radius: 8px;
+}
+
+.react-responsive-modal-closeButton {
+  background-color: var(--tertiary);
+  border-radius: 8px;
 }
 
 .project-modal-info {
   font-size: 22px;
   font-family: "Fredoka One";
+}
+
+.technology {
+  background-color: white;
+  width: fit-content;
 }
 
 .jQuery {
@@ -160,6 +173,10 @@ textarea {
 .person-icon {
   font-size: 48px;
   color: var(--tertiary);
+}
+
+.modal-divide {
+  border-top: 2px solid var(--tertiary);
 }
 
 .meal-maker {
@@ -305,10 +322,10 @@ margin-bottom: 6px;
 
 @media screen and (min-width: 768px) {
   .navbar {
-    width: fit-content;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 
     .navbar-ul {
@@ -392,7 +409,7 @@ margin-bottom: 6px;
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 600px) {
   .react-responsive-modal-modal {
     display: flex;
     flex-direction: column;
