@@ -18,7 +18,7 @@ function Navigation({ currentPage, handlePageChange }) {
         </a>
       </h1>
       <nav className="font-mono text-2xl font-medium mr-12">
-        <ul className="flex justify-between font-effect-anaglyph">
+        <ul className="flex justify-between font-effect-anaglyph navbar-ul">
           <li className="navbar-item px-10">
             <NavLink
               href="/about"

@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <div className="mt-36 about-body">
-      <header className="flex justify-center font-mono text-7xl font-bold about-header font-effect-3d">
+    <div id="About" className="mt-36 about-body flex flex-col">
+      <header className="flex justify-center text-center font-mono text-7xl font-bold about-header font-effect-3d">
         <span className="animate-pulse">HELLO, I'M MITCHELL ARMSTRONG</span>
       </header>
       <div className="grid flex-col justify-items-center my-5">
