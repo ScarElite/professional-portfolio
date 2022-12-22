@@ -430,3 +430,25 @@ margin-bottom: 6px;
     padding: 0px 16px;
   }
 }
+
+@keyframes font-effect-fire-animation-keyframes {
+  0% {
+    text-shadow: 0 -0.05em 0.2em rgb(8 253 216), 0.01em -0.02em 0.15em rgb(8 253 216), 0.01em -0.05em 0.15em rgb(8 253 216), 0.02em -0.15em 0.2em rgb(8 253 216), 0.04em -0.2em 0.3em rgb(8 253 216), 0.05em -0.25em 0.4em rgb(8 253 216), 0.06em -0.2em 0.9em rgb(8 253 216), 0.1em -0.1em 1em rgb(8 253 216);
+  }
+
+  25% {
+    text-shadow: 0 -0.05em 0.2em rgb(8 253 216), 0 -0.05em 0.17em rgb(8 253 216), 0.04em -0.12em 0.22em rgb(8 253 216), 0.04em -0.13em 0.27em rgb(8 253 216), 0.05em -0.23em 0.33em rgb(8 253 216), 0.07em -0.28em 0.47em rgb(8 253 216), 0.1em -0.3em 0.8em rgb(8 253 216), 0.1em -0.3em 0.9em rgb(8 253 216);
+  }
+
+  50% {
+    text-shadow: 0 -0.05em 0.2em rgb(8 253 216), 0.01em -0.02em 0.15em rgb(8 253 216), 0.01em -0.05em 0.15em rgb(8 253 216), 0.02em -0.15em 0.2em rgb(8 253 216), 0.04em -0.2em 0.3em rgb(8 253 216), 0.05em -0.25em 0.4em rgb(8 253 216), 0.06em -0.2em 0.9em rgb(8 253 216), 0.1em -0.1em 1em rgb(8 253 216);
+  }
+
+  75% {
+    text-shadow: 0 -0.05em 0.2em rgb(8 253 216), 0 -0.06em 0.18em rgb(8 253 216), 0.05em -0.15em 0.23em rgb(8 253 216), 0.05em -0.15em 0.3em rgb(8 253 216), 0.07em -0.25em 0.4em rgb(8 253 216), 0.09em -0.3em 0.5em rgb(8 253 216), 0.1em -0.3em 0.9em rgb(8 253 216), 0.1em -0.3em 1em rgb(8 253 216);
+  }
+
+  100% {
+    text-shadow: 0 -0.05em 0.2em rgb(8 253 216), 0.01em -0.02em 0.15em rgb(8 253 216), 0.01em -0.05em 0.15em rgb(8 253 216), 0.02em -0.15em 0.2em rgb(8 253 216), 0.04em -0.2em 0.3em rgb(8 253 216), 0.05em -0.25em 0.4em rgb(8 253 216), 0.06em -0.2em 0.9em rgb(8 253 216), 0.1em -0.1em 1em rgb(8 253 216);
+  }
+}
