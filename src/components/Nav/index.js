@@ -12,7 +12,7 @@ function Navigation({ currentPage, handlePageChange }) {
 
   return (
     <div className="navbar flex align-content: items-center justify-between p-4">
-      <h1 className="title-header font-effect-anaglyph">
+      <h1 className="title-header font-effect-fire-animation">
         <a href="/">
           Mitchell Armstrong <span class="wave">👋</span>
         </a>
