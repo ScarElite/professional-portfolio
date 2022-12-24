@@ -39,11 +39,7 @@ function About() {
           </p>
         </section>
         <section className="my-10">
-          <img
-            className="personal-image"
-            src="https://via.placeholder.com/250"
-            alt="placeholder"
-          ></img>
+          <div className="personal-image"></div>
         </section>
       </div>
     </div>
