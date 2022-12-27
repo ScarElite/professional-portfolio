@@ -30,8 +30,6 @@ Hello, I'm Mitchell Armstrong! I'm a graduate of the UNC Chapel Hill Coding Boot
 ## Here's a link to the Heroku deployment
 https://m-armstrong-portfolio.herokuapp.com/
 
-## Here's a link to the GitHub Pages deployment
-
 ## Contribution:
 Made by Mitchell Armstrong
 
