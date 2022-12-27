@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ScarElite/professional-portfolio/static/css/main.b31a97ed.css",
+    "main.js": "/ScarElite/professional-portfolio/static/js/main.1693580d.js",
+    "static/js/787.10c1ab8b.chunk.js": "/ScarElite/professional-portfolio/static/js/787.10c1ab8b.chunk.js",
+    "static/media/meal-maker.PNG": "/ScarElite/professional-portfolio/static/media/meal-maker.f4b3a57777288afa590d.PNG",
+    "static/media/alternative-endings.PNG": "/ScarElite/professional-portfolio/static/media/alternative-endings.d259acbe0291c4ba31b8.PNG",
+    "static/media/pfp.jpg": "/ScarElite/professional-portfolio/static/media/pfp.b33e2afc9afee28ce1c9.jpg",
+    "static/media/Mitchell_Armstrong_Resume_8.pdf": "/ScarElite/professional-portfolio/static/media/Mitchell_Armstrong_Resume_8.03809273d1a548acb952.pdf",
+    "static/media/work-day-scheduler-preview.PNG": "/ScarElite/professional-portfolio/static/media/work-day-scheduler-preview.333134657c343e5af538.PNG",
+    "static/media/Coding-Quiz.png": "/ScarElite/professional-portfolio/static/media/Coding-Quiz.433306d71cc701aae5c5.png",
+    "static/media/tech-blog-dashboard.PNG": "/ScarElite/professional-portfolio/static/media/tech-blog-dashboard.c3c1b4efd66be75c234a.PNG",
+    "static/media/JATE.PNG": "/ScarElite/professional-portfolio/static/media/JATE.70bd316fa52c4aa66b29.PNG",
+    "index.html": "/ScarElite/professional-portfolio/index.html",
+    "main.b31a97ed.css.map": "/ScarElite/professional-portfolio/static/css/main.b31a97ed.css.map",
+    "main.1693580d.js.map": "/ScarElite/professional-portfolio/static/js/main.1693580d.js.map",
+    "787.10c1ab8b.chunk.js.map": "/ScarElite/professional-portfolio/static/js/787.10c1ab8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b31a97ed.css",
+    "static/js/main.1693580d.js"
+  ]
+}
