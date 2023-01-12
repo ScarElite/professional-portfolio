@@ -1,16 +1,17 @@
-import React from "react";
-import { Modal } from "react-responsive-modal";
-import { AiFillGithub } from "react-icons/ai";
-import { SiHeroku } from "react-icons/si";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { SiJquery } from "react-icons/si";
-import { BsFillPersonFill } from "react-icons/bs";
-import mealMaker from "../../assets/images/meal-maker.PNG";
-import alternativeEndings from "../../assets/images/alternative-endings.PNG";
-import JATE from "../../assets/images/JATE.PNG";
-import techBlog from "../../assets/images/tech-blog-dashboard.PNG";
-import codingQuiz from "../../assets/images/Coding-Quiz.png";
-import workDayScheduler from "../../assets/images/work-day-scheduler-preview.PNG";
+import React from 'react';
+import { Modal } from 'react-responsive-modal';
+import { AiFillGithub } from 'react-icons/ai';
+import { SiHeroku } from 'react-icons/si';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import { SiJquery } from 'react-icons/si';
+import { BsFillPersonFill } from 'react-icons/bs';
+import mealMaker from '../../assets/images/meal-maker.PNG';
+import alternativeEndings from '../../assets/images/alternative-endings.PNG';
+import JATE from '../../assets/images/JATE.PNG';
+import techBlog from '../../assets/images/tech-blog-dashboard.PNG';
+import codingQuiz from '../../assets/images/Coding-Quiz.png';
+import workDayScheduler from '../../assets/images/work-day-scheduler-preview.PNG';
+import OurPlace from '../../assets/images/OurPlace.PNG';
 
 function Portfolio() {
   const [modalOne, setOpenFirst] = React.useState(false);
@@ -19,6 +20,7 @@ function Portfolio() {
   const [modalFour, setOpenFourth] = React.useState(false);
   const [modalFive, setOpenFifth] = React.useState(false);
   const [modalSix, setOpenSixth] = React.useState(false);
+  const [modalSeven, setOpenSeventh] = React.useState(false);
 
   const project1Modal = (
     <div>
@@ -557,8 +559,133 @@ function Portfolio() {
     </div>
   );
 
+  const project7Modal = (
+    <div>
+      <div className="flex-col project-modal-info">
+        <h2>Technologies Used:</h2>
+        <ul className="flex technology">
+          <li>
+            <img
+              src="https://img.icons8.com/color/48/null/html-5--v1.png"
+              alt="HTML"
+            />
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/color/48/null/css3.png"
+              alt="CSS"
+            />
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/color/48/null/javascript--v1.png"
+              alt="JavaScript"
+            />
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/color/48/null/nodejs.png"
+              alt="Node.js"
+            />
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/color/48/null/express-js.png"
+              alt="Express.js"
+            />
+          </li>
+        </ul>
+        <h2 className="mt-4">Team Size:</h2>
+        <ul className="flex">
+          <li className="pt-2 person-icon">
+            <BsFillPersonFill></BsFillPersonFill>
+          </li>
+          <li className="pt-2 person-icon">
+            <BsFillPersonFill></BsFillPersonFill>
+          </li>
+          <li className="pt-2 person-icon">
+            <BsFillPersonFill></BsFillPersonFill>
+          </li>
+          <li className="pt-2 person-icon">
+            <BsFillPersonFill></BsFillPersonFill>
+          </li>
+          <li className="pt-2 person-icon">
+            <BsFillPersonFill></BsFillPersonFill>
+          </li>
+        </ul>
+      </div>
+      <h3 className="text-3xl font-medium mt-6 mb-2 pb-2">
+        About the project:
+      </h3>
+      <p className="text-lg pb-6">
+        This was the final project in the UNC Chapel Hill Coding BootCamp and
+        was a collaborative project. I worked on this project with 4 other
+        developers who helped create this. Using everything we learned from this
+        course we built a roommate finder application.
+      </p>
+      <p className="text-lg pb-6">
+        OurPlace was developed to be a roommate finder for people that can not
+        cover rent and need a way to vet potential roommates. Step aside
+        CraigsList. Users register with their first name, last name, email, and
+        password. Once registered the user can comb through the home page and
+        look for potential roommate candidates. On this home page, cards are
+        generated on a component gathering the users profile data: username,
+        gender, budget, location, allow pets, and about me. These profile cards
+        are generated on each users dashboard. If the user wants their own data
+        on the site they go to their dashboard page and fill out the profile
+        form. This form creates and updates the users profile and will now be
+        seen on the home page. The homepage has a filter for all available
+        profile inputs other than username and about me. This filter gives each
+        user the ability to find the perfect match for themselves. This
+        application also has a working friend mutation, so users will be able to
+        add friends and in the future send direct messages to them.
+      </p>
+      <p className="text-base italic pb-6">
+        To learn more about this application please visit the GitHub Repo by
+        clicking the GitHub icon below!
+      </p>
+      <h3 className="text-2xl font-medium mb-4 pb-2 py-4 modal-divide">
+        Check out the GitHub Repo or the deployed Heroku application
+      </h3>
+      <div className="mt-8">
+        <ul className="flex text-8xl justify-center">
+          <li className="px-20 animate-pulse">
+            <a
+              href="https://github.com/awchen85/project-3"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillGithub></AiFillGithub>
+            </a>
+          </li>
+          <li className="px-20 animate-pulse">
+            <a
+              href="https://p3-our-place.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiHeroku></SiHeroku>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+
   return (
     <div className="container mx-auto project-modal">
+      <Modal
+        classNames="project-modal"
+        open={modalSeven}
+        onClose={() => setOpenSeventh(false)}
+        center
+      >
+        <p className="text-4xl font-bold text-center mb-4">Our Place</p>
+        <div className="rounded-xl mb-4">
+          <img src={OurPlace} alt="" className="rounded-xl modal-img" />
+        </div>
+        {project7Modal}
+      </Modal>
       <Modal
         classNames="project-modal"
         open={modalOne}
@@ -634,6 +761,12 @@ function Portfolio() {
       </div>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 mt-20">
+        <div
+          className="project project-1 flex flex-col justify-center rounded-xl"
+          onClick={() => setOpenSeventh(true)}
+        >
+          <img src={OurPlace} alt="" className="rounded-xl" />
+        </div>
         <div
           className="project project-1 flex flex-col justify-center rounded-xl"
           onClick={() => setOpenFirst(true)}
