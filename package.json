@@ -5,6 +5,8 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -21,7 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-     "start": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
