@@ -1,59 +1,61 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navigation({ currentPage, handlePageChange }) {
-  const determineIsActive = (tabName, currentPage) => {
-    let linkClass = "";
-    if (tabName === currentPage) {
-      linkClass += " active";
-    }
-    return linkClass;
-  };
+  // const determineIsActive = (tabName, currentPage) => {
+  //   let linkClass = "";
+  //   if (tabName === currentPage) {
+  //     linkClass += " active";
+  //   }
+  //   return linkClass;
+  // };
 
   return (
     <div className="navbar flex align-content: items-center justify-between p-4">
-      <h1 className="title-header font-effect-fire-animation">
-        <a href="/">
-          Mitchell Armstrong <span class="wave">👋</span>
-        </a>
+      <h1 className="title-header">
+        <a href="/">MA</a>
       </h1>
       <nav className="font-mono text-2xl font-medium mr-12">
-        <ul className="flex justify-between font-effect-anaglyph navbar-ul">
+        <ul className="flex justify-between">
           <li className="navbar-item px-10">
-            <NavLink
+            {/* <NavLink
               href="/about"
               className={determineIsActive("About", currentPage)}
               onClick={() => handlePageChange("About")}
             >
               About Me
-            </NavLink>
+            </NavLink> */}
+            About Me
           </li>
           <li className="navbar-item px-10">
-            <NavLink
+            {/* <NavLink
               href="/portfolio"
               className={determineIsActive("Portfolio", currentPage)}
               onClick={() => handlePageChange("Portfolio")}
             >
               Portfolio
-            </NavLink>
+            </NavLink> */}
+            Portfolio
           </li>
           <li className="navbar-item px-10">
-            <NavLink
+            {/* <NavLink
               href="/contact"
               className={determineIsActive("Contact", currentPage)}
               onClick={() => handlePageChange("Contact")}
             >
               Contact
-            </NavLink>
+            </NavLink> */}
+            Contact
           </li>
           <li className="navbar-item px-10">
-            <NavLink
+            {/* <NavLink
               href="/resume"
               className={determineIsActive("Resume", currentPage)}
               onClick={() => handlePageChange("Resume")}
             >
               Resume
-            </NavLink>
+            </NavLink> */}
+            Resume
           </li>
         </ul>
       </nav>

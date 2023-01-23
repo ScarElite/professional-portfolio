@@ -755,9 +755,7 @@ function Portfolio() {
       </Modal>
 
       <div>
-        <h1 className="project-page-header text-8xl font-effect-fire-animation mt-20">
-          Some Of My Work
-        </h1>
+        <h1 className="project-page-header text-8xl mt-20">Some Of My Work</h1>
       </div>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 mt-20">

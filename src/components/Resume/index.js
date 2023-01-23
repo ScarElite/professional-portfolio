@@ -1,17 +1,13 @@
-import React from "react";
-import { FaFileDownload } from "react-icons/fa";
+import React from 'react';
+import { FaFileDownload } from 'react-icons/fa';
 
 function Resume() {
   return (
     <div>
-      <h1 className="skills-header font-effect-3d mt-20 font-effect-fire">
-        My Skills
-      </h1>
+      <h1 className="skills-header mt-20">My Skills</h1>
       <div className="skills-sections flex justify-center mt-20">
         <div className="skill-section-left px-4">
-          <h2 className="skill-section-header font-effect-emboss">
-            Front-End Proficiencies
-          </h2>
+          <h2 className="skill-section-header">Front-End Proficiencies</h2>
           <div className="flex flex-wrap frontend-skills">
             <div className="frontend-skill">HTML</div>
             <div className="frontend-skill">CSS</div>
@@ -26,9 +22,7 @@ function Resume() {
         </div>
         <div className="skill-border"></div>
         <div className="skill-section-right px-4">
-          <h2 className="skill-section-header font-effect-emboss">
-            Back-End Proficiencies
-          </h2>
+          <h2 className="skill-section-header">Back-End Proficiencies</h2>
           <div className="flex flex-wrap backend-skills">
             <div className="backend-skill">APIs</div>
             <div className="backend-skill">Node</div>

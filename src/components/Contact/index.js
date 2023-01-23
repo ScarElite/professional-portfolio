@@ -1,35 +1,35 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import Swal from "sweetalert2";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
   const form = useRef();
 
-  const checkInfo = (e) => {
+  const checkInfo = e => {
     e.preventDefault();
 
-    let userName = document.getElementById("user_name").value;
-    let userEmail = document.getElementById("user_email").value;
-    let userMessage = document.getElementById("user_message").value;
+    let userName = document.getElementById('user_name').value;
+    let userEmail = document.getElementById('user_email').value;
+    let userMessage = document.getElementById('user_message').value;
 
     if (!userName) {
       Swal.fire({
-        icon: "warning",
-        title: "Must have a Name!",
+        icon: 'warning',
+        title: 'Must have a Name!',
       });
-      console.log("Must have a Name!");
+      console.log('Must have a Name!');
     } else if (!userEmail) {
       Swal.fire({
-        icon: "warning",
-        title: "Must have a valid Email!",
+        icon: 'warning',
+        title: 'Must have a valid Email!',
       });
-      console.log("Must have an Email!");
+      console.log('Must have an Email!');
     } else if (!userMessage) {
       Swal.fire({
-        icon: "warning",
-        title: "Must include a Message!",
+        icon: 'warning',
+        title: 'Must include a Message!',
       });
-      console.log("Must have a message!");
+      console.log('Must have a message!');
     } else {
       emailjs
         .sendForm(
@@ -39,18 +39,18 @@ const Contact = () => {
           process.env.REACT_APP_PUBLIC_KEY
         )
         .then(
-          (result) => {
+          result => {
             console.log(result.text);
             Swal.fire({
-              icon: "success",
-              title: "Message Sent Successfully",
+              icon: 'success',
+              title: 'Message Sent Successfully',
             });
           },
-          (error) => {
+          error => {
             console.log(error.text);
             Swal.fire({
-              icon: "error",
-              title: "Something went wrong :sweat_smile:",
+              icon: 'error',
+              title: 'Something went wrong :sweat_smile:',
               text: error.text,
             });
           }
@@ -94,7 +94,7 @@ const Contact = () => {
             type="submit"
             value="Submit"
             id="input-submit"
-            className="contact-submit font-effect-anaglyph"
+            className="contact-submit"
           />
         </form>
       </div>
